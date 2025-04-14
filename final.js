@@ -1,4 +1,4 @@
-// final.js
+
 // This script handles the "Learn More" button functionality using plain JavaScript
 
 document.addEventListener("DOMContentLoaded", function () {
