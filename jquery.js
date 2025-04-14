@@ -1,4 +1,4 @@
-// jquery.js
+
 // jQuery effects to enhance index.html
 $(document).ready(function () {
   // 1️ Slide down welcome message on page load
