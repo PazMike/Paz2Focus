@@ -1,5 +1,5 @@
 //Here are the 3 functions required to perform calculation based on user input:
-
+//still being used for final website
 // Function to perform basic calculations based on user's input (age in months or birth year)
 function calculateAgeInMonths(age) {
   // Calculate age in months
