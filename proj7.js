@@ -6,6 +6,7 @@ function updateSelections() {
   // Get all checkbox elements
   const checkboxes = document.querySelectorAll(".option-checkbox");
 
+  //checking
   checkboxes.forEach((checkbox) => {
     // If the checkbox is checked, add it to the array
     if (checkbox.checked) {
