@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- This is the Contact Me page of the Paz2Focus website -->
+<html id="contactPage">
+  <head>
+    <!-- Linking the external stylesheet for consistent look and feel -->
+    <link rel="stylesheet" href="styler.css" />
+
+    <!-- Title of the page shown in the browser tab -->
+    <title>Contact Me</title>
+
+    <!-- Makes the page responsive on all devices, especially mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body id="contactPage">
+    <!-- =======================
+         Navigation Bar Section
+         ======================= -->
+    <!-- Used for navigating between website pages -->
+    <nav>
+      <!-- Each <a> tag links to another page -->
+      <!-- The "active" class highlights the current page in the nav -->
+      <a href="index.html">Home</a>
+      <a href="about.html">About US</a>
+      <a href="contact.html" class="active">Contact Me</a>
+      <a href="register.html">Register</a>
+      <a href="services.html">Our Services</a>
+    </nav>
+
+    <!-- ==============================
+         Optional Photo Gallery Section
+         ============================== -->
+    <!-- A placeholder for gallery content injected by JavaScript -->
+    <section class="Photo Gallery">
+      <div id="photo-gallery"></div>
+    </section>
+
+    <!-- ======================
+         Contact Form Section
+         ====================== -->
+    <!-- This section lets users send questions, comments, or booking requests -->
+    <section class="contact-section">
+      <h2>
+        If you have any questions, want to book a session, reach out by filling
+        out the form below!
+      </h2>
+
+      <!-- Contact form begins -->
+      <!-- Uses POST method via JavaScript to collect user input -->
+      <form id="contact-form">
+        <!-- Group: Full Name Field -->
+        <div class="form-group">
+          <!-- "for" attribute links label to the input's ID -->
+          <label for="full-name">Full Name:</label>
+          <!-- Required field for user full name -->
+          <input type="text" id="full-name" name="full-name" required />
+        </div>
+
+        <!-- Group: Age Input -->
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <!-- Only accepts numeric input -->
+          <input type="number" id="age" name="age" required />
+        </div>
+
+        <!-- Group: Email Input -->
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <!-- Uses type=email for built-in validation -->
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <!-- Group: Message Text Area -->
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <!-- Textarea allows users to write longer messages -->
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+
+      <!-- ================
+           Response Section
+           ================ -->
+      <!-- This box displays dynamic feedback (like thank you messages) -->
+      <div id="response-box" class="response-box"></div>
+
+      <!-- ======================
+           Additional Contact Info
+           ====================== -->
+      <!-- Provides alternate contact methods for users -->
+      <div class="contact-info">
+        <h3>Other Ways to Reach Me:</h3>
+        <p>Phone: (707) 438-8999</p>
+        <p>Email: mapaz1@liberty.edu</p>
+        <p>Location: 123 East Campus Bldg123, Lynchburg, VA</p>
+      </div>
+    </section>
+
+    <!-- ======================
+         JavaScript Files Linked
+         ====================== -->
+    <!-- proj2.js: Handles contact form interactions and submission logic -->
+    <script src="proj2.js"></script>
+
+    <!-- proj5.js: Contains gallery or reusable script used site-wide -->
+    <script src="proj5.js"></script>
+
+    <!-- ================
+         Footer Section
+         ================ -->
+    <!-- Displayed at the bottom of every page -->
+    <footer>
+      <p>Paz2Focus web page was created by Michael Paz.</p>
+      <p>&copy; 2025 Photography Website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
