@@ -5,6 +5,7 @@ function getQueryParams() {
   const textColor = urlParams.get("textColor");
   const fontSize = urlParams.get("fontSize");
 
+  //all customization options
   if (bgColor) {
     document.body.style.backgroundColor = bgColor;
     console.log("Applying query parameter for background color: ", bgColor);
