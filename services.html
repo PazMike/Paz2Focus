@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- Declares the document to be HTML5 -->
+<html lang="en">
+  <head>
+    <!-- Link to external CSS stylesheet for custom site styling -->
+    <link rel="stylesheet" href="styler.css" />
+
+    <!-- Page title shown on browser tab -->
+    <title>Final Page</title>
+
+    <!-- Ensures the page is responsive and scales correctly on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ======================================
+         BOOTSTRAP CDN - For Layout and Styling
+         ====================================== -->
+    <!-- This is the Bootstrap 4.5.2 CSS hosted on MaxCDN -->
+    <!-- Bootstrap provides built-in classes for layout (e.g., container, row, col) and components like cards/buttons -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body id="finalPage">
+    <!-- ================================
+         NAVIGATION BAR (Sitewide Links)
+         ================================ -->
+    <nav>
+      <!-- These links help navigate between pages consistently -->
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="register.html">Register</a>
+      <!-- Highlights this page as currently active -->
+      <a href="services.html" class="active">Our Services</a>
+    </nav>
+
+    <!-- ================================
+         PAGE CONTENT CONTAINER (Bootstrap)
+         ================================ -->
+    <!-- The container class centers the content and adds margin -->
+    <div class="container">
+      <!-- Page heading centered using Bootstrap's text-center -->
+      <h1 class="text-center">Our Services</h1>
+
+      <!-- ROW for three responsive cards side by side on medium+ screens -->
+      <div class="row">
+        <!-- ========== CARD 1: FAMILY PHOTOS ========== -->
+        <div class="col-md-4">
+          <!-- Bootstrap card component -->
+          <div class="card">
+            <!-- Card image (responsive) -->
+            <img
+              class="card-img-top"
+              src="images/familypic.jpg"
+              alt="Family Photos"
+            />
+            <!-- Card content -->
+            <div class="card-body">
+              <h5 class="card-title">Family Photos</h5>
+              <p class="card-text">
+                Capture the best moments with your family in stunning quality.
+              </p>
+              <!-- Button triggers additional action (could open modal or scroll) -->
+              <button class="btn btn-primary learn-more-btn">Learn More</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ========== CARD 2: WEDDING PHOTOS ========== -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="images/marriagepic.jpg"
+              alt="Wedding Photos"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Wedding Photos</h5>
+              <p class="card-text">
+                Preserve your unforgettable wedding day memories with
+                professional shots.
+              </p>
+              <button class="btn btn-primary learn-more-btn">Learn More</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ========== CARD 3: EVENT PHOTOS ========== -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="images/femalegrad.jpg"
+              alt="Event Photos"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Event Photos</h5>
+              <p class="card-text">
+                Let us cover your special event with high-quality photography.
+              </p>
+              <button class="btn btn-primary learn-more-btn">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of row -->
+    </div>
+    <!-- End of container -->
+
+    <!-- ====================================
+         JAVASCRIPT FILES AND FRAMEWORKS
+         ==================================== -->
+
+    <!-- Bootstrap’s JavaScript (required for modals, dropdowns, etc.) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- External JS file used for custom interactivity (e.g., Learn More button logic) -->
+    <script src="final.js"></script>
+  </body>
+</html>
