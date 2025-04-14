@@ -14,6 +14,7 @@ const galleryData = {
 // Requirement #1: Slideshow/Lightbox Overlay for Image
 let currentImageIndex = 0; // Keep track of the current image index
 
+//overlay
 function openOverlayImage(imageSrc, altText, index) {
   currentImageIndex = index; // Update the index when opening the overlay
 
