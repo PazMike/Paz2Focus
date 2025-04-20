@@ -18,6 +18,16 @@
   }
 }
 
+.container {
+  text-align: center;
+}
+
+#thankYouMessage {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #28a745;
+}
+
 /* ============================
    AUTOCOMPLETE SUGGESTION BOX
    ============================ */
@@ -241,6 +251,7 @@ header {
   padding: 20px;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .contact-section h2 {
