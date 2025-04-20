@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Declares the document as an HTML5 file -->
 <html lang="en">
   <head>
     <!-- Links external CSS for page styling -->
@@ -36,9 +37,10 @@
          =========================== -->
     <div class="content">
       <!-- Main Heading of the Homepage -->
+      <!--(JQUERY) THIS TITLE HAS A JQUERY EFFECT HOVER OVER IT AND IT WILL BOUNCE-->
       <h1>Paz2Focus</h1>
 
-      <!-- Hidden welcome box that is revealed using jQuery -->
+      <!-- (JQUERY)  Hidden text box that is revealed using jQuery -->
       <div id="welcome-box" style="display: none" class="welcome-msg">
         Official website of Michael Paz's photography
       </div>
@@ -56,131 +58,101 @@
       <!-- Suggested search terms appear here dynamically -->
       <ul id="suggestions"></ul>
 
-      <!-- =============================
-           Page Customization Form
-           ============================= -->
-      <h2>Customize this page!</h2>
-      <form id="customizationForm">
-        <!-- Color picker for background -->
-        <label for="bgColor">Click a custom background Color:</label>
-        <input type="color" id="bgColor" name="bgColor" value="#ffffff" />
-
-        <!-- Color picker for text -->
-        <label for="textColor">Click a custom text Color:</label>
-        <input type="color" id="textColor" name="textColor" value="#000000" />
-
-        <!-- Font size adjustment slider -->
-        <label for="fontSize">Slide the bar to adjust font Size:</label>
-        <input
-          type="range"
-          id="fontSize"
-          name="fontSize"
-          min="10"
-          max="50"
-          value="16"
-        />
-
-        <!-- Button to apply custom styles -->
-        <button type="submit">Apply</button>
-      </form>
-
       <!-- ========================
            Photo Gallery Section
            ======================== -->
       <section class="Photo Gallery">
-        <h2>Our Photography Gallery</h2>
+        <h2>Featured Photos</h2>
         <p>Click on an image to view it in full size!</p>
 
         <!-- JavaScript will dynamically generate and insert gallery images -->
         <div id="photo-gallery"></div>
       </section>
 
-      <!-- ===============================
+   <!-- ===============================
            Survey Form (User Preferences)
            =============================== -->
-      <div class="content">
-        <h1>
-          Fill out what type of pictures you like, so we get to know more about
-          you!
-        </h1>
+<div class="content">
+  <p>
+    Fill out what type of pictures you like, so we get to know more about
+    you!
+  </p>
 
-        <!-- Collects user preferences through checkboxes, text input, and file upload -->
-        <form id="user-form">
-          <!-- Checkbox options for types of photos -->
-          <h2>Choose Your Options:</h2>
+  <!-- Collects user preferences through checkboxes, text input, and file upload -->
+  <form id="user-form">
+    <!-- Checkbox options for types of photos -->
+    <h2>Choose Your Options:</h2>
 
-          <label for="single-photo">
-            <input
-              type="checkbox"
-              id="single-photo"
-              class="option-checkbox"
-              value="single photo"
-            />
-            Single Photos </label
-          ><br />
+    <label for="single-photo">
+      <input
+        type="checkbox"
+        id="single-photo"
+        class="option-checkbox"
+        value="single photo"
+      />
+      Single Photos
+    </label><br />
 
-          <label for="event-photos">
-            <input
-              type="checkbox"
-              id="event-photos"
-              class="option-checkbox"
-              value="event photos"
-            />
-            Event Photos </label
-          ><br />
+    <label for="event-photos">
+      <input
+        type="checkbox"
+        id="event-photos"
+        class="option-checkbox"
+        value="event photos"
+      />
+      Event Photos
+    </label><br />
 
-          <label for="family-photo">
-            <input
-              type="checkbox"
-              id="family-photo"
-              class="option-checkbox"
-              value="family photo"
-            />
-            Family Photos </label
-          ><br />
+    <label for="family-photo">
+      <input
+        type="checkbox"
+        id="family-photo"
+        class="option-checkbox"
+        value="family photo"
+      />
+      Family Photos
+    </label><br />
 
-          <!-- Input field for phone number -->
-          <h2>Enter Phone Number of your account:</h2>
-          <input
-            type="text"
-            id="phone-number"
-            placeholder="Enter phone number (digits only)"
-            title="Your phone number"
-            required
-          /><br />
+    <!-- Input field for phone number -->
+    <h2>Enter Phone Number of your account:</h2>
+    <input
+      type="text"
+      id="phone-number"
+      placeholder="Enter phone number (digits only)"
+      title="Your phone number"
+      required
+    /><br />
 
-          <!-- File upload input for .txt files -->
-          <h2>Upload a Text File:</h2>
-          <input
-            type="file"
-            id="file-upload"
-            accept=".txt"
-            title="Upload a text file"
-          /><br />
-        </form>
+    <!-- Outputs user selections from the form above -->
+    <h2>Your Selections:</h2>
+    <div id="selections-output"></div>
 
-        <!-- Outputs user selections from the form above -->
-        <h2>Your Selections:</h2>
-        <div id="selections-output"></div>
+    <!-- Output area for phone number -->
+    <h2>Your Phone Number:</h2>
+    <div id="phone-output"></div>
 
-        <!-- Output area for phone number -->
-        <h2>Your Phone Number:</h2>
-        <div id="phone-output"></div>
-
-        <!-- Display the content of uploaded file here -->
-        <h2>File Contents:</h2>
-        <div id="file-output"></div>
-      </div>
+    <div class="container">
+      <form id="responseForm">
+        <button type="submit" id="submitButton">Submit</button>
+      </form>
+      <!-- Confirmation Message (Initially hidden) -->
+      <p id="thankYouMessage" style="display: none">
+        Thank you! Your response has been recorded.
+      </p>
     </div>
+  </div>
 
+  <!-- This is the response box where results will be displayed -->
+  <div id="response-box"></div>
+</div>
     <!-- =======================
          JavaScript References
          ======================= -->
     <!-- Contains logic for form interaction and DOM manipulation -->
-    <script src="proj9.js"></script>
-    <script src="proj7.js"></script>
-    <script src="proj5.js"></script>
-    <!-- Redundant jquery.js here; should be removed if already in <head> -->
+    <script src="final.js"></script>
+    <script src="final2.js"></script>
+    <script src="final3.js"></script>
+    <script src="final4.js"></script>
     <script src="jquery.js"></script>
 
     <!-- ====================
