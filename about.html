@@ -1,11 +1,18 @@
 <!DOCTYPE html>
+<!-- This is the About Us page of the Paz2Focus photography website -->
 <html>
   <head>
     <!-- Link to external CSS file for consistent styling across all pages -->
     <link rel="stylesheet" href="styler.css" />
 
+    <!-- Page title shown in browser tab -->
     <title>About US</title>
 
+    <!-- jQuery CDN: Loads jQuery library from the internet -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Loads custom jQuery interactions after jQuery is loaded -->
+    <script src="jquery.js" defer></script>
     <!-- Ensures proper scaling and responsiveness on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
@@ -27,7 +34,37 @@
     <!-- Main content container to display information about the website -->
     <div class="content">
       <!-- Page heading -->
+      <!--(JQUERY) THIS TITLE HAS A JQUERY EFFECT HOVER OVER IT AND IT WILL BOUNCE-->
       <h1>About Paz2Focus</h1>
+
+      <!-- =============================
+           Page Customization Form
+           ============================= -->
+      <!-- (JQUERY)  Hidden customization form that is revealed using jQuery -->
+      <h2>Customize this page!</h2>
+      <form id="customizationForm">
+        <!-- Color picker for background -->
+        <label for="bgColor">Click a custom background Color:</label>
+        <input type="color" id="bgColor" name="bgColor" value="#ffffff" />
+
+        <!-- Color picker for text -->
+        <label for="textColor">Click a custom text Color:</label>
+        <input type="color" id="textColor" name="textColor" value="#000000" />
+
+        <!-- Font size adjustment slider -->
+        <label for="fontSize">Slide the bar to adjust font Size:</label>
+        <input
+          type="range"
+          id="fontSize"
+          name="fontSize"
+          min="10"
+          max="50"
+          value="16"
+        />
+
+        <!-- Button to apply custom styles -->
+        <button type="submit">Apply</button>
+      </form>
 
       <!-- Description of the website and its purpose -->
       <p>
@@ -48,8 +85,9 @@
     </div>
 
     <!-- External JavaScript file that contains dynamic functionality such as populating the gallery -->
-    <script src="proj5.js"></script>
-
+    <script src="final.js"></script>
+    <script src="final3.js"></script>
+    <script src="jquery.js"></script>
     <!-- Footer section shown at the bottom of the page on all screens -->
     <footer>
       <!-- Copyright and author attribution -->
