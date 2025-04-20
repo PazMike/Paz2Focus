@@ -1,13 +1,15 @@
-
+// jquery.js
 // jQuery effects to enhance index.html
+// this is also in about.html
 $(document).ready(function () {
   // 1️ Slide down welcome message on page load
   $("#welcome-box").slideDown(1200);
 
-  // Fade in customization form
+  //THIS IS IN About.html
+  // (BONUS JQUERY EFFECT ON ABOUT.html) Fade in customization form
   $("#customizationForm").hide().fadeIn(1500);
 
-  // 3️ Predictive search feature
+  // 2 Predictive search feature
   const suggestions = [
     "Family Photos",
     "Wedding Photos",
@@ -51,3 +53,12 @@ $(document).ready(function () {
     }
   );
 });
+
+document
+  .getElementById("responseForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevents the form from actually submitting
+
+    // Display the "Thank you for your response!" message
+    document.getElementById("thankYouMessage").style.display = "block";
+  });
